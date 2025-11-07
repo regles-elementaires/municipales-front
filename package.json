@@ -3,7 +3,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./municipales/assets/src/sass/app.scss ./municipales/assets/css/app.css --style compressed --no-source-map"
+    "sass": "sass ./assets/src/sass/app.scss ./assets/css/app.css --style compressed --no-source-map"
   },
   "repository": {
     "type": "git",

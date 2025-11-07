@@ -3,12 +3,14 @@
   background-color: transparent;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   height: 500px;
+  width: 100px;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
@@ -27,6 +29,9 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 /* Style the back side */
