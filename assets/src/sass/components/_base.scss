@@ -50,6 +50,14 @@ body {
 		border-radius: 500px;
 		padding: .5rem 1.5rem !important;
 	}
+
+	.rounded-red-button {
+		background-color: $red;
+		color: $white ;
+		border: none;
+		border-radius: 500px;
+		padding: .5rem 1.5rem !important;
+	}
 	
 	.header {
 		background-color: $dark-red;
@@ -182,10 +190,20 @@ body {
 	margin-left: -150px;
 }
 
+.accordion-title-container {
+	border-left: 1px solid white;
+}
+
 .accordion-title {
 	font-family: 'Bebas Neue', sans-serif;
 	color: white;
 	font-size: 24px;
+}
+
+.accordion-number {
+	font-family: 'Bebas Neue', sans-serif;
+	color: white;
+	font-size: 36px;
 }
 
 .accordion-badge {
@@ -194,59 +212,15 @@ body {
 	padding: .2rem .5rem;
 }
 
-.programme {
-	margin-top: 40px;
-	p {
-		margin-bottom: 1rem;
+.footer {
+	.logo {
+		height: 30px;
 	}
 
-	ul {
-		padding: 0;
-		li {
-			list-style: none;
+	.footer-img {
+		margin-top: -100px;
+		@media (max-width: 768px) {
+			margin-top: 20px;
 		}
 	}
-}
-
-.sign-button {
-	background-color: $dark-red;
-	color: white;
-	letter-spacing: 2px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	border: none;
-	border-radius: 500px;
-	padding: 1rem 2rem;
-	text-decoration: none;
-	&:hover {
-		color: white;
-	}
-}
-
-.kit-button {
-	color: $dark-red;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-style: normal;
-	border: none;
-	border-radius: 500px;
-	&:hover {
-		color: $dark-red;
-	}
-}
-
-.logo-partner {
-	max-width: 100%;
-}
-
-.sources {
-	list-style-type: none;
-	padding: 0;
-	font-size: .8rem;
-}
-
-.groupe-femme {
-	max-width: 800px;
 }

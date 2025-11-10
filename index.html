@@ -76,7 +76,7 @@
                 <a class="nav-link text-white" href="#recommandations">Nos recommandations</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link d-inline-block mb-2 mb-md-0 rounded-button" href="#">Je signe</a>
+                <a class="nav-link d-inline-block mb-2 mb-md-0 rounded-button" href="#sign-form">Je signe</a>
                 </li>
             </ul>
             </div>
@@ -96,7 +96,7 @@
                 <div class="row mt-5">
                     <div class="d-flex p-0 flex-wrap">
                         <div class="me-4">
-                            <a class="rounded-button fw-bolder text-decoration-none" href="#">Je signe</a>
+                            <a class="rounded-button fw-bolder text-decoration-none" href="#sign-form">Je signe</a>
                         </div>
                         <!--
                         <p class="share d-flex">
@@ -328,86 +328,279 @@
         </div>
 
         <div id="recommandations" class="row py-5 bg-light-grey">
-            <div class="col-14 col-xxl-10 mx-auto">
+            <div class="col-16 col-xxl-10 mx-auto">
                 <img class="img-fluid z-3 position-absolute d-none d-md-block img-protections" src="./assets/img/protections.png" alt="">
                 <h2 class="col-18 col-md-14 mx-auto red bebas-neue fs-1 text-center">Les recommandations pour changer les règles sur son territoires</h2>
                 <p class="mt-4 text-center col-16 mx-auto">À l’approche des élections municipales, Règles Élémentaires met à disposition des élu·es et candidat·es sept recommandations concrètes et pratiques pour changer les règles sur leurs territoires. Ces recommandations visent à inscrire les droits menstruels au cœur de la stratégie locale, afin d’encourager l’inclusivité au sein des collectivités et de lutter activement contre le tabou des règles à l’échelle des territoires.</p>                    
 
-                <!--<div class="accordion mt-5" id="accordionExample">
+                <div class="accordion mt-5" id="accordionReco">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <div class="d-flex flex-column align-items-start">
-                                    <div class="accordion-title">Accordion Item #1</div>
-                                    <div class="dm-sans d-flex">
-                                        <span class="accordion-badge bg-light-green me-2">#ecologie</span>
-                                        <span class="accordion-badge bg-light-green">#ecologie</span>
-                                    </div>                            
+                            <button class="accordion-button ps-0 py-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        <div>1</div>
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Élaborer une stratégie municipale pour la favoriser la justice menstruelle sur le territoire
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-light-red me-3">#santé</span>
+                                            <span class="accordion-badge bg-light-green">#écologie</span>
+                                        </div>  
+                                    </div>                                                              
                                 </div>   
                             </button>                     
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>Faire de la lutte contre la précarité menstruelle et de la promotion de la santé menstruelle une priorité stratégique de l’action municipale constitue un levier essentiel pour avoir un impact réel et devenir un territoire acteur de changement. Cette ambition implique de mobiliser l’ensemble des compétences de la ville (enfance, éducation, culture, urbanisme, santé, etc.) et d’associer pleinement les citoyen•nes, les associations, les professionnels etc. Pour être à la hauteur des enjeux, cette stratégie doit s’appuyer sur des moyens ambitieux et occuper une place centrale dans les priorités budgétaires de la municipalité.</p>
+                                <p class="mt-3 fw-bolder">Quelques exemples d’action transverses que vous pouvez mettre en place :</p>
+                                <ul class="fw-bolder">
+                                    <li>Proposer une enquête territoriale multi parties pour identifier les besoins locaux;</li>
+                                    <li>Identifier et nommer la lutte contre la précarité menstruelle et la promotion de la santé menstruelle comme des sujets centraux de l’action municipale;</li>
+                                    <li>Utiliser les outils de la budgétisation sensible au genre pour identifier les investissements potentiels.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div class="d-flex flex-column align-items-start">
-                                    <div class="accordion-title">Accordion Item #2</div>
-                                    <div class="dm-sans d-flex">
-                                        <span class="accordion-badge bg-light-green me-2">#ecologie</span>
-                                        <span class="accordion-badge bg-light-green">#ecologie</span>
-                                    </div>                            
-                                </div>
-                            </button>
+                            <button class="accordion-button ps-0 py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        <div>2</div>
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Écouter et prendre en compte les personnes qui ont leurs règles pour favoriser l’égalité au quotidien
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-purple">#égalité</span>
+                                        </div>  
+                                    </div>                                                              
+                                </div>   
+                            </button>                     
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>En luttant activement contre les tabous et les stéréotypes qui entourent les règles, et en traitant les règles comme un enjeu d’égalité, chaque élu·e peut permettre aux personnes menstruées de se sentir vues, entendues, et favoriser l’égalité réelle entre les citoyen·nes de son territoire les besoins spécifiques des personnes menstruées dans l’espace public et municipal.</p>
+                                <p class="mt-3 fw-bolder">Quelques exemples d’action transverses que vous pouvez mettre en place pour visibiliser les règles et favoriser l’égalité sur votre territoire :</p>
+                                <ul class="fw-bolder">
+                                    <li>Généraliser l’accès aux protections périodiques dans la ville (en favorisant les protections saines) en installant des distributeurs dans les espaces publics et municipaux accueillant du public;</li>
+                                    <li>Faciliter l’accès à des sanitaires et à des points d’eau gratuits et propres dans les différents quartiers de la ville;</li>
+                                    <li>Organiser des temps d’échanges participatifs dédiés à l’adaptation des espaces de la ville pour les personnes qui ont leurs règles;</li>
+                                    <li>Mettre à disposition des citoyen·nes des expositions informatives dans les lieux publics et / ou des projets culturels globaux impliquant différents acteurs municipaux (bibliothèques, associations, musées…);</li>
+                                    <li>Soutenir l’organisation de temps de débat et d’échanges informatifs (avec projection de films, lecture de textes sur les règles à l’appui, invitation de professionnels médicaux… ).</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <div class="d-flex flex-column align-items-start">
-                                    <div class="accordion-title">Accordion Item #3</div>
-                                    <div class="dm-sans d-flex">
-                                        <span class="accordion-badge bg-light-green me-2">#ecologie</span>
-                                        <span class="accordion-badge bg-light-green">#ecologie</span>
-                                    </div>                            
-                                </div>
-                            </button>
+                            <button class="accordion-button ps-0 py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        3
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Lutter contre la pauvreté et encourager les solidarités en soutenant celles et ceux qui agissent déjà contre la précarité menstruelle
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-dark-blue">#solidarité</span>
+                                        </div>  
+                                    </div>                                                              
+                                </div>   
+                            </button>                     
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>Premiers relais des politiques d’égalité et de solidarité sur leur territoire, les élu·es locaux disposent de plusieurs leviers d’action pour lutter contre la précarité menstruelle et renforcer les capacités de leurs associations locales. En menant des campagnes de sensibilisation et d’actions ciblées, et/ou en dédiant une partie du budget municipal aux acteurs locaux engagés contre la précarité, chaque municipalité peut initier un changement durable et améliorer le quotidien des personnes menstruées sur son territoire.</p>
+                                <p class="mt-3 fw-bolder">Quelques exemples d’action transverses que vous pouvez mettre en place :</p>
+                                <ul class="fw-bolder">
+                                    <li>Fixer un budget dédié à l’achat de protections pour les associations locales de lutte contre la précarité et d’accueil des femmes précaires au sein du budget solidarité de la ville;</li>
+                                    <li>Initier et encourager l’organisation de collectes municipales aux bénéfices des associations locales;</li>
+                                    <li>Intégrer des critères d’éga-conditionnalité à la politique d’octroi de certaines subventions, afin d’inciter les structures associatives à mettre l’égalité au cœur de leurs activités et favoriser l’émergence d’initiatives impactantes en faveur des femmes et personnes qui ont leurs règles;</li>
+                                    <li>Participer à la création de ressources de sensibilisation sur les enjeux de santé publique liés aux règles (syndrome du choc toxique, endométriose…) et à la diffusion des informations concernant les lieux ressources de la ville ou du territoire;</li>
+                                    <li>Sensibiliser et former le personnel municipal en contact avec le public, et notamment le public en situation de précarité, aux enjeux liés à la santé menstruelle.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button ps-0 py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        4
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Promouvoir la santé des jeunes et prévenir la précarité menstruelle et la construction des inégalités dès le plus jeune âge
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-yellow">#jeunesse</span>
+                                        </div>  
+                                    </div>                                                              
+                                </div>   
+                            </button>                     
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>Parce que la santé et l’égalité se construisent dès l’enfance, les municipalités ont un rôle essentiel à jouer pour que les jeunes, indépendamment de leur genre, grandissent dans une société où les règles ne sont ni un tabou, ni une source de douleurs ou d’exclusion. Donner les clés aux jeunes et à toutes les personnes à leur contact pour comprendre la santé menstruelle, c’est permettre à chacun·e de mieux se connaître, de comprendre les autres, et de développer une culture de respect et d’égalité.</p>
+                                <p class="mt-3 fw-bolder">Quelques exemples d’action transverses que vous pouvez mettre en place via les structures de jeunesse :</p>
+                                <ul class="fw-bolder">
+                                    <li>Organiser des séances d’éducation menstruelle à l’école primaire (CM1-CM2) et au sein des centres de loisirs, en complément des temps d’éducation à la santé, pour aborder sans tabou la puberté, le corps et les règles;</li>
+                                    <li>Mettre à disposition de produits périodiques dans les établissements scolaires, afin que plus aucun·e élève ne soit contraint·e de manquer un cours ou une activité pour une question matérielle;</li>
+                                    <li>Assurer la formation des animateur·rices et des personnels éducatifs des structures périscolaires et de loisirs, pour qu’ils et elles soient en capacité d’accompagner les jeunes avec bienveillance et sans stéréotypes;</li>
+                                    <li>Prévoir des temps de rencontres municipaux sur la santé menstruelle dédiés aux jeunes et/ou aux jeunes et leurs parents pour partager des ressources et informer sur les dispositifs municipaux existants pour les accompagner.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button ps-0 py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        5
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Créer des environnements sportifs égalitaires pour encourager la pratique de toutes et tous
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-light-blue">#sport</span>
+                                        </div>  
+                                    </div>                                                              
+                                </div>   
+                            </button>                     
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>L’invisibilisation persistante des règles dans le milieu sportif contribue encore trop souvent à l’abandon des activités. En tant qu’actrice principale de la vie associative et sportive locale, chaque municipalité a un rôle central à jouer pour mobiliser et sensibiliser les structures, favoriser le dialogue entre les différents acteurs du milieu et prévenir le décrochage sportif des personnes menstruées.</p>
+                                <p class="mt-3 fw-bolder">Afin de déconstruire les idées reçues et d’encourager la participation des personnes menstruées aux activités sportives locales, vous pouvez :</p>
+                                <ul class="fw-bolder">
+                                    <li>Créer un budget dédié à la féminisation du sport dans les associations de la ville, pour encourager la participation des jeunes filles et lever les freins liés aux menstruations;</li>
+                                    <li>Sensibiliser les jeunes sportif·ves à la santé menstruelle et à l’impact du cycle sur la pratique sportive, afin de normaliser les discussions autour du sujet dans les clubs et les vestiaires;</li>
+                                    <li>Généraliser la mise à disposition de protections périodiques dans les lieux sportifs municipaux et associatifs;</li>
+                                    <li>Former les coachs et encadrant·es des clubs sportifs à la prise en compte des besoins spécifiques des athlètes menstrué·es, pour adapter les entraînements et promouvoir un sport plus égalitaire.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button ps-0 py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        6
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Favoriser la prise en compte de la santé menstruelle sur ma commune
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-light-red">#santé</span>
+                                        </div>  
+                                    </div>                                                              
+                                </div>   
+                            </button>                     
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>La santé menstruelle est un enjeu essentiel de santé publique et d’égalité. Les élu·es municipaux ont un rôle déterminant à jouer pour garantir l’accès de tous·tes à des interlocuteur·ices qualifié·es et à des ressources fiables sur la santé menstruelle, à tous les âges et à chaque étape de leurs vies.<br/>Intégrer la santé menstruelle dans les politiques locales est essentiel pour déconstruire les stéréotypes, promouvoir la tolérance mutuelle, et améliorer le quotidien des personnes menstruées sur le territoire.</p>
+                                <p class="mt-3 fw-bolder">Afin de garantir la prise en compte de la santé menstruelle sur votre territoire, vous pouvez :</p>
+                                <ul class="fw-bolder">
+                                    <li>Mettre en place des actions de prévention au sein du Centre Municipal de Santé (consultations spécialisées, campagnes de sensibilisation sur les pathologies…);</li>
+                                    <li>Organiser des temps de sensibilisation parents-enfants autour de la puberté, des règles et de la santé, pour renforcer la confiance et briser les tabous dans le cercle familial;</li>
+                                    <li>Développer des partenariats avec les structures locales (centres sociaux, PMI, associations familiales) afin de mieux informer et accompagner les familles, notamment celles en situation de précarité;</li>
+                                    <li>Mettre à disposition des ressources éducatives et des informations fiables (brochures, ateliers, vidéos, podcasts) sur la santé menstruelle, le coût des produits périodiques, et les solutions existantes sur le territoire;</li>
+                                    <li>
+                                        Promouvoir la santé menstruelle au travail pour les agents / agentes de la ville :
+                                        <ul>
+                                            <li>En menant une réflexion sur les besoins des personnels municipaux qui ont leur règles et mettre en place des adaptations / aménagements leur permettant d’améliorer leurs conditions de travail (télétravail, adaptation du poste de travail);</li>
+                                            <li>En mettant à disposition des protections périodiques saines pour les agent·es;</li>
+                                            <li>En garantissant la formation de tous les agent·es aux enjeux de la Santé menstruelle.</li>
+                                        </ul> 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button ps-0 py-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <div class="col-16 d-flex align-items-center">
+                                    <div class="accordion-number col-3 col-md-2 d-flex justify-content-center align-items-center">
+                                        7
+                                    </div>
+                                    <div class="accordion-title-container col-15 col-md-16 py-3 ps-3">
+                                        <div class="accordion-title">                                        
+                                            Accompagner la transition écologique en favorisant l’utilisation de produits périodiques plus respectueux de l’environnement
+                                        </div>
+                                        <div class="dm-sans d-flex mt-2">
+                                            <span class="accordion-badge bg-light-green">#écologie</span>
+                                        </div>  
+                                    </div>                                                              
+                                </div>   
+                            </button>                     
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionReco">
+                            <div class="accordion-body p-md-4">
+                                <p>Parce que les règles ont un impact environnemental et sanitaire important, les municipalités doivent encourager et accompagner la transition des citoyen·nes vers des produits périodiques plus durables, plus sains et plus respectueux du corps et de l’environnement.</p>
+                                <p class="mt-3 fw-bolder">Quelques exemples d’initiatives que vous pouvez mettre en place au sein de votre commune :</p>
+                                <ul class="fw-bolder">
+                                    <li>Accompagner les citoyen·nes dans leur démarche de réduction des déchets en les sensibilisant à des alternatives plus durables et saines de protections périodiques jetables ou réutilisables (via des ateliers participatifs, des conférences);</li>
+                                    <li>Offrir un soutien financier à l’achat de protections réutilisables saines et à pauvre impact environnemental;</li>
+                                    <li>Développer des campagnes de prévention et d’information sur l’impact écologique des produits périodiques à l’échelle du territoire.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="mt-5 text-center">
+                    <a class="rounded-red-button fw-bolder text-decoration-none" href="#sign-form">Je signe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-5">
+            <div class="col-14 col-xxl-12 mx-auto">
+                <div class="row">
+                    <h2 class="bebas-neue fs-1 p-0">à propos de règles élémentaires</h2>
+                </div>
+                <div class="row d-flex flex-wrap mt-3">
+                    <div class="col-18 col-md-11 p-0 pe-md-3">
+                        <p>Depuis 2015, l'association Règles élémentaires agit partout en France pour mettre fin à la précarité menstruelle en redistribuant des produits périodiques, mais aussi en parlant des règles pour qu’elles ne soient plus un sujet tabou. L’objectif : que chacun·e puisse vivre ses règles dignement.</p>
+                        <p class="mt-4">L’association informe et éduque sur les règles, promeut la santé menstruelle et innove pour favoriser l’accès aux produits périodiques partout sur le territoire hexagonal et à Mayotte. Elle agit auprès du grand public et des décideurs politiques pour faire changer les mentalités et les lois et permettre l’avènement d’une société plus juste pour les personnes qui ont leurs règles.</p>
+                        <p class="mt-4">Elle accompagne et favorise également l’engagement des acteurs locaux publics et privés pour lutter contre la précarité menstruelle et le tabou des règles sur leur territoire.</p>
+                    </div>
+                    <div class="col-18 col-md-7 p-0 mt-4 mt-md-0 ps-md-4">
+                        <img class="img-fluid" src="./assets/img/equipe.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
         
-        <!--<div class="row bg-purple mt-5 py-4 pb-lg-0">
-            <div class="col-16 offset-1 col-md-14 offset-md-2 col-lg-10 offset-lg-4 white freight-bold ps-0">
-                <div class="row">
-                    <div class="col-md-9">
-                        <img class="logo mt-4" src="./assets/img/red-logo.png">
-                        <p class="mt-4">Association Règles Élémentaires<br/>La Cité Audacieuse<br/>9 rue de Vaugirard - 75006 Paris</p>
-                    </div>
-                </div> 
-                <div class="row">
-                    <div class="offset-md-3">
-                        <img class="groupe-femme d-none d-lg-inline" src="./assets/img/illu-footer.svg">
-                    </div>
-                </div>          
+        <div class="footer row bg-dark-red d-flex justify-content-center pt-5">
+            <div class="col-14 col-md-10 text-white ps-0 d-flex flex-wrap">
+                <div class="col-18 col-md-9 pe-md-5">
+                    <h2 class="bebas-neue fs-2">Municipales 2026</h2>
+                    <div class="d-flex align-items-center">
+                        Une initiative signée <a href="https://www.regleselementaires.com/" target="_blank"><img class="logo ms-3" src="./assets/img/white-logo.png" alt="Site vitrine de Règles élementaires"></a>
+                    </div>                    
+                    <p class="my-4">Association Règles Élémentaires<br/>La Cité Audacieuse - 9 rue de Vaugirard - 75006 Paris</p>
+                    <a href="https://www.regleselementaires.com/" class="bebas-neue fs-3 text-white text-decoration-none">www.regleselementaires.com</a>
+                </div>
+                <div class="col-18 col-md-9">
+                    <img class="img-fluid footer-img" src="./assets/img/footer.png">
+                </div>         
             </div>
-        </div>-->
+        </div>
 
     </section>
 
