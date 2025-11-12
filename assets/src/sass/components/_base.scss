@@ -100,6 +100,58 @@ body {
 	}
 }
 
+.pin-icon {
+	width: 25px;
+}
+
+.plus-icon {
+	width: 20px;
+	height: 20px;
+	image-rendering: pixelated;
+}
+
+.bg-sceaux {
+	background-image: url("../img/initiatives/sceaux.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-quimperle {
+	background-image: url("../img/initiatives/quimperle.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-caux {
+	background-image: url("../img/initiatives/caux.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-evian {
+	background-image: url("../img/initiatives/evian.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-venissieux {
+	background-image: url("../img/initiatives/venissieux.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-strasbourg {
+	background-image: url("../img/initiatives/strasbourg.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.bg-toul {
+	background-image: url("../img/initiatives/toul.png");
+	background-size: cover;
+	background-position: center;
+}
+
 .form-block {
 	background-color: white;
 	.border-black {
@@ -116,7 +168,7 @@ body {
 			opacity: 1; /* Firefox */
 		}
 
-		&[type="checkbox"], &[type="radio"] {
+		&[type="radio"] {
 			/* Add if not using autoprefixer */
 			-webkit-appearance: none;
 			/* Remove most all native input styles */
@@ -153,7 +205,7 @@ body {
 		}
 
 		@media (max-width: 768px) {
-			&[type="checkbox"], &[type="radio"] {
+			&[type="radio"] {
 				height: 1em;
 				&::before{
 					width: 0.8em;
@@ -218,7 +270,7 @@ body {
 	}
 
 	.footer-img {
-		margin-top: -100px;
+		margin-top: -60px;
 		@media (max-width: 768px) {
 			margin-top: 20px;
 		}
