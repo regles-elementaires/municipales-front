@@ -234,6 +234,17 @@ body {
 		border-radius: 500px;
 		padding: .5rem 1.5rem;
 		text-decoration: none;
+		display: inline-block;
+	}
+	@media (min-width: 768px) {
+		.bg-letter{
+			background-image: url("../img/lettre_ouverte.png");
+			background-size: cover;
+			background-position: center;
+			width: 632px;
+			height: 347px;
+			margin: auto;
+		}
 	}
 }
 
