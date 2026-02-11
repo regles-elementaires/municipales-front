@@ -227,14 +227,20 @@ body {
 		}
 	}
 	a {
-		background-color: $red;
-		color: white;
 		font-weight: 700;
 		border: none;
 		border-radius: 500px;
 		padding: .5rem 1.5rem;
 		text-decoration: none;
 		display: inline-block;
+	}
+	.red-pill {
+		background-color: $red;
+		color: white;
+	}
+	.white-pill {
+		background-color: white;
+		color: $red;
 	}
 	@media (min-width: 768px) {
 		.bg-letter{
